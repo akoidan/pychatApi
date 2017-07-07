@@ -1,0 +1,5 @@
+.idea
+pychatApi/prod.py
+*.pyc
+__pycache__
+db.sqlite3
