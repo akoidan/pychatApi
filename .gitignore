@@ -1,4 +1,5 @@
 .idea
+log
 pychatApi/prod.py
 *.pyc
 __pycache__
