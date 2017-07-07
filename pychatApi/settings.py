@@ -29,7 +29,7 @@ SECRET_KEY = 'rxb-by1t1ga^doi63_n&o+^98o^z=fp2are$+a!fhw)bf^@yj2'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['api.pychat.org', 'localhost']
 
 # Application definition
 
