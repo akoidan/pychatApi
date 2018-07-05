@@ -14,7 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  url(r'^blog/', include('blog.urls'))
 """
 from django.conf.urls import url
+from django.conf.urls.static import static
 from django.contrib import admin
+
+from pychatApi import settings
 
 urlpatterns = [
 	url(r'^toMyDearGirlFriend', 'api.views.start_valentine'),
@@ -23,4 +26,5 @@ urlpatterns = [
 	url(r'^25', 'api.views.start_valentine'),
 	url(r'^HappyBirthday', 'api.views.birthday25', name='continue_birthday'),
 	url(r'^admin/', admin.site.urls),
-]
+	url(r'^upload_file', 'api.views.upload_file'),
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

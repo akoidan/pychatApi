@@ -7,6 +7,8 @@ from django.views.decorators.http import require_http_methods
 
 from django.conf import settings
 
+from api.models import UploadedFile
+
 
 @require_http_methods('GET')
 def notify(request):
@@ -15,6 +17,18 @@ def notify(request):
 		raise Http404
 	pushbullet("User has clicked on the link", "POE")
 	return HttpResponse("User has been notified", content_type='text/plain')
+
+
+
+@require_http_methods(['POST'])
+def upload_file(request):
+	"""
+	POST only, validates email during registration
+	"""
+	uf = UploadedFile(file=request.FILES['file'])
+	uf.save()
+	return HttpResponse(uf.file.url, content_type='text/plain')
+
 
 
 def pushbullet(data, title):
