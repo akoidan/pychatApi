@@ -1,4 +1,7 @@
 .idea
+photos
+static
+api/migrations
 log
 pychatApi/prod.py
 *.pyc
