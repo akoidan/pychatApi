@@ -56,7 +56,7 @@
 <audio id="audio" src="{% md5url 'merryChristmas.mp3' %}" autoplay="autoplay"></audio>
 <div class="flexContainer">
 	<div class="flexWrapp">
-		<img src="{% md5url 'tenor.gif' %}" height="80%"/>
+		<img src="{% md5url 'minion.gif' %}" height="80%"/>
 		<p id="text"></p>
 	</div>
 </div>
@@ -67,7 +67,6 @@
 					 if (i < message.length) {
 						 var textDiv = document.getElementById('text');
 						 if (message[i] === '\n') {
-						 	debugger
 						 	textDiv.innerHTML += '<br>';
 						 } else {
 						 	textDiv.innerHTML += message[i];
