@@ -1,6 +1,6 @@
 .idea
+.venv
 photos
-static
 api/migrations
 log
 pychatApi/prod.py

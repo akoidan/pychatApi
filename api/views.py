@@ -68,3 +68,20 @@ def start_valentine(request):
 	@return:  the x intercept of the line M{y=m*x+b}.
 	"""
 	return render_to_response('startValentine.html')
+
+@require_http_methods('GET')
+def start_new_year(request):
+	"""
+	Login or logout navbar is creates by means of create_nav_page
+	@return:  the x intercept of the line M{y=m*x+b}.
+	"""
+	return render_to_response('startNewYear.html')
+
+
+@require_http_methods('GET')
+def continue_new_year(request):
+	"""
+	Login or logout navbar is creates by means of create_nav_page
+	@return:  the x intercept of the line M{y=m*x+b}.
+	"""
+	return render_to_response('continueNewYear.html')
