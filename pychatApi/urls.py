@@ -24,7 +24,6 @@ urlpatterns = [
 	url(r'^ILoveYou', 'api.views.valentine', name='continue_valentine'),
 	url(r'^notify$', 'api.views.notify'),
 	url(r'^25', 'api.views.start_valentine'),
-	url(r'^$', 'api.views.start_new_year'),
 	url(r'^HappyNewYear$', 'api.views.continue_new_year', name='continue_new_year'),
 	url(r'^HappyBirthday', 'api.views.birthday25', name='continue_birthday'),
 	url(r'^admin/', admin.site.urls),
