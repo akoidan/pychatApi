@@ -2,7 +2,7 @@
 Description=uWSGI Server
 
 [Service]
-ExecStart=/usr/bin/uwsgi --ini "/etc/uwsgi/pychatApi.ini" 
+ExecStart=/usr/bin/uwsgi --plugin python --ini "/etc/uwsgi/pychatApi.ini" 
 SuccessExitStatus=30
 ExecReload=/bin/kill -HUP $MAINPID
 KillSignal=SIGINT
