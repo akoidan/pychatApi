@@ -85,3 +85,30 @@ def continue_new_year(request):
 	@return:  the x intercept of the line M{y=m*x+b}.
 	"""
 	return render_to_response('continueNewYear.html')
+
+
+@require_http_methods('GET')
+def galina_1(request):
+	"""
+	Login or logout navbar is creates by means of create_nav_page
+	@return:  the x intercept of the line M{y=m*x+b}.
+	"""
+	return render_to_response('galina1.html')
+
+
+@require_http_methods('GET')
+def galina_2(request):
+	"""
+	Login or logout navbar is creates by means of create_nav_page
+	@return:  the x intercept of the line M{y=m*x+b}.
+	"""
+	return render_to_response('galina2.html')
+
+
+@require_http_methods('GET')
+def galina_3(request):
+	"""
+	Login or logout navbar is creates by means of create_nav_page
+	@return:  the x intercept of the line M{y=m*x+b}.
+	"""
+	return render_to_response('galina3.html')
